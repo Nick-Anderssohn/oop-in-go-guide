@@ -210,7 +210,7 @@ polymorphicDog.makeCoolAnimalSound()
 
 However, there is a serious problem if we do it like this. We cannot access anything that animal or dog has that is not described by the interface. This means you cannot access any fields or dog's peeOnFireHydrant() function. You cannot cast from an interface to a struct. This brings us to how to properly use anonymous fields and interfaces.
 
-### Proper Usage of interfaces and fields
+### Proper Usage of Interfaces and Anonymous Fields
 
 The key is to separate polymorphic action logic from other logic. This means instead of taking a style where you create variables that are of a parent and instantiate them using a child, you should create child variables and write functions that accept interfaces, or potentially accept a list of interfaces (or some other data structure). Here is the proper way to write this example in go:
 
