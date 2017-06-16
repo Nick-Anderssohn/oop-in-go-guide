@@ -96,7 +96,7 @@ func (d *dog) peeOnFireHydrant() {
 }
 ```
 
-Notice that dog has Animal as an anonymous field. You can think of this as a combination of inheritance and composition. In other words, dog has both an is-a and has-a relationship to animal. That sounds confusing, so lets clear it up.
+Notice that dog has Animal as an anonymous field. You define an anonymous field by simply including the type instead of both a field name and type. You can think of this as a combination of inheritance and composition. In other words, dog has both an is-a and has-a relationship to animal. That sounds confusing, so lets clear it up.
 
 ##### An Anonymous Field's Inheritance-Like (is-a) Behavior
 
