@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Copyright (c) 2017 Nick Anderssohn
+using System;
 
 namespace c_sharp_example
 {

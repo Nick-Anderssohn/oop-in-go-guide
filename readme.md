@@ -256,3 +256,6 @@ In go, you should separate child specific logic from parent logic and also separ
 ## Examples
 
 See the examples folder for C# and go examples of the same program with nearly identical designs. 
+
+
+Copyright (c) 2017 Nick Anderssohn

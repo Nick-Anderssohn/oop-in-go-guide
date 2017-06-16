@@ -1,3 +1,4 @@
+// Copyright (c) 2017 Nick Anderssohn
 package main
 
 import "fmt"
