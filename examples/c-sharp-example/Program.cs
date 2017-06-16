@@ -25,25 +25,37 @@ namespace c_sharp_example
         {
             Console.WriteLine("Woof!");
         }
+
+        public void PeeOnFireHydrant()
+        {
+          Console.WriteLine(Name + " marked his territory!");
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-          // Can have an instance of the parent class
             Animal unknownAnimal = new Animal {Name = "Bob the unknown"};
-            unknownAnimal.PrintName();
-            unknownAnimal.MakeCoolAnimalSound();
-
-            Animal polymorphicDog = new Dog
+            Animal cozmo = new Dog
             {
               Name = "Cozmo the dog",
               DogCollarBrand = "Barky"
             };
-            polymorphicDog.PrintName();
-            polymorphicDog.MakeCoolAnimalSound();
-            Console.WriteLine(((Dog)polymorphicDog).DogCollarBrand);
+
+            RunPolymorphicAnimalFuncs(unknownAnimal);
+            RunPolymorphicAnimalFuncs(cozmo);
+
+            Console.WriteLine();
+            Console.WriteLine(unknownAnimal.Name);
+            Console.WriteLine(((Dog)cozmo).DogCollarBrand);
+            ((Dog)cozmo).PeeOnFireHydrant();
+        }
+
+        static void RunPolymorphicAnimalFuncs(Animal polymorphicAnimal)
+        {
+            polymorphicAnimal.PrintName();
+            polymorphicAnimal.MakeCoolAnimalSound();
         }
     }
 }
