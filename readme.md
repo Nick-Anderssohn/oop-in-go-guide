@@ -3,7 +3,7 @@
 How to accomplish object-oriented/polymorphic behavior in golang. This is meant for programmers who have at least a basic understanding of inheritance and polymorphism, experience with a standard OOP language (such as C#, Java, C++, etc...), know the basics of golang, and want to learn how to write better code in go and use OOP design patterns.
 
 ## A Basic OOP Example
-This example will be basic and brief because you should have at least this level of understanding on inheritance and polymorphism. You might have a parent class Animal and child class Dog that look like this in C#:
+This example will be basic and brief because you should have at least this level of understanding of inheritance and polymorphism. You might have a parent class Animal and child class Dog that look like this in C#:
 ```
 class Animal
     {
